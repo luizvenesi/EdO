@@ -18,6 +18,8 @@
 		0CA1F9341F7DE0B60057242D /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CA1F9311F7DE0B60057242D /* TFHpple.m */; };
 		0CA1F9391F7DE2800057242D /* libxml2.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CA1F9381F7DE2800057242D /* libxml2.2.tbd */; };
 		0CA1F93B1F7DE28E0057242D /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CA1F93A1F7DE28E0057242D /* libxml2.tbd */; };
+		0CFAA1A21F7FD413007AD705 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFAA1A01F7FD413007AD705 /* TableViewCell.swift */; };
+		0CFAA1A31F7FD413007AD705 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CFAA1A11F7FD413007AD705 /* TableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		0CA1F9311F7DE0B60057242D /* TFHpple.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFHpple.m; sourceTree = "<group>"; };
 		0CA1F9381F7DE2800057242D /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
 		0CA1F93A1F7DE28E0057242D /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		0CFAA1A01F7FD413007AD705 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		0CFAA1A11F7FD413007AD705 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,8 @@
 				0CA1F9201F7DD6230057242D /* Info.plist */,
 				0CA1F9361F7DE10F0057242D /* TFHpple */,
 				0CA1F92B1F7DE0B40057242D /* EdO_01-Bridging-Header.h */,
+				0CFAA1A01F7FD413007AD705 /* TableViewCell.swift */,
+				0CFAA1A11F7FD413007AD705 /* TableViewCell.xib */,
 			);
 			path = EdO_01;
 			sourceTree = "<group>";
@@ -169,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CA1F91F1F7DD6230057242D /* LaunchScreen.storyboard in Resources */,
+				0CFAA1A31F7FD413007AD705 /* TableViewCell.xib in Resources */,
 				0CA1F91C1F7DD6230057242D /* Assets.xcassets in Resources */,
 				0CA1F91A1F7DD6230057242D /* Main.storyboard in Resources */,
 			);
@@ -186,6 +193,7 @@
 				0CA1F9291F7DDCFF0057242D /* SenadorViewController.swift in Sources */,
 				0CA1F9341F7DE0B60057242D /* TFHpple.m in Sources */,
 				0CA1F9321F7DE0B60057242D /* XPathQuery.m in Sources */,
+				0CFAA1A21F7FD413007AD705 /* TableViewCell.swift in Sources */,
 				0CA1F9151F7DD6230057242D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

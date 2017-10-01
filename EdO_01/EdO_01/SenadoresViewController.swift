@@ -8,7 +8,9 @@
 
 import UIKit
 
+
 class SenadoresViewController: UIViewController, UITableViewDelegate, UITableViewDataSource  {
+    
     
     
     @IBOutlet weak var tableView: UITableView!
@@ -20,25 +22,13 @@ class SenadoresViewController: UIViewController, UITableViewDelegate, UITableVie
     
     let senadorName = ["Acir Gurgacz", "Airton Sandoval", "Alvaro Dias","Ana Amélia", "Ângela Portela", "Antonio Anastasia", "Antonio Carlos Valadares", "Armando Monteiro", "Ataídes Oliveira", "Benedito de Lira", "Cássio Cunha Lima", "Cidinho Santos", "Ciro Nogueira", "Cristovam Buarque", "Dalirio Beber", "Dário Berger", "Davi Alcolumbre", "Edison Lobão", "Eduardo Amorim", "Eduardo Braga", "Eduardo Lopes", "Elmano Férrer", "Eunício Oliveira", "Fátima Bezerra", "Fernando Bezerra Coelho", "Fernando Collor", "Flexa Ribeiro", "Garibaldi Alves Filho", "Gladson Cameli", "Gleisi Hoffmann", "Hélio José", "Humberto Costa", "Ivo Cassol", "Jader Barbalho", "João Alberto Souza", "João Capiberibe", "Jorge Viana", "José Agripino", "José Maranhão", "José Medeiros", "José Pimentel", "José Serra", "Kátia Abreu", "Lasier Martins", "Lídice da Mata", "Lindbergh Farias", "Lúcia Vânia", "Magno Malta", "Maria do Carmo Alves", "Marta Suplicy", "Omar Aziz", "Otto Alencar", "Paulo Bauer", "Paulo Paim", "Paulo Rocha", "Pedro Chaves", "Raimundo Lira", "Randolfe Rodrigues", "Regina Sousa", "Reguffe", "Renan Calheiros", "Ricardo Ferraço", "Roberto Muniz", "Roberto Requião", "Roberto Rocha", "Romário", "Romero Jucá", "Ronaldo Caiado", "Rose de Freitas", "Sérgio Petecão", "Simone Tebet", "Tasso Jereissati", "Telmário Mota", "Valdir Raupp", "Vanessa Grazziotin", "Vicentinho Alves", "Waldemir Moka", "Waldemir Moka", "Wilder Morais", "Zeze Perrella" ]
     
+    let senadorPartido = ["PDT","PMDB", "PODE", "PP", "PDT", "PSDB", "PSB", "PTB", "PSDB", "PP", "PSDB", "PR", "PP", "PPS", "PSDB", "PMDB", "DEM", "PMDB", "PSDB", "PMDB", "PRB", "PMDB", "PMDB", "PT", "PMDB", "PTC", "PSDB", "PMDB", "PP", "PT", "PMDB","PP","PT", "PMDB","PMDB", "PSB", "PT", "DEM", "PMDB", "PODE", "PT", "PSDB", "PMDB", "PSD", "PSB", "PT", "PSB", "PR", "DEM", "PMDB", "PSD", "PSD", "PSDB", "PT", "PT", "PSC", "PMDB", "REDE", "PT", "Sem Partido", "PMDB", "PSDB", "PP", "PMDB", "Sem Partido", "PODE", "PMDB", "DEM", "PMDB", "PSD", "PMDB", "PSDB", "PTB", "PMDB", "PCdoB", "PR", "PMDB", "PR", "PP", "PMDB"]
     
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
-    {
-        return(senadorName.count)
-    }
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
-        cell.textLabel?.text = senadorName[indexPath.row]
-        return(cell)
-    }
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        myIndex = indexPath.row
-        performSegue(withIdentifier: "goToSenador", sender: self)
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
        
+        
         
     }
     
@@ -55,6 +45,33 @@ class SenadoresViewController: UIViewController, UITableViewDelegate, UITableVie
         }
     }
     
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
+        return(senadorName.count)
+        
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = Bundle.main.loadNibNamed("TableViewCell", owner: self, options: nil)?.first as! TableViewCell
+        cell.imageCellText.text = senadorImage[indexPath.row]
+        cell.senadorPartido.text = senadorPartido[indexPath.row]
+        cell.labelCustom.text = senadorName[indexPath.row]
+        cell.senadorID.text = senadorID[indexPath.row]
+        tableView.separatorStyle = .none
+        cell.selectionStyle = .none
+        return(cell)
+        
+       
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        myIndex = indexPath.row
+        performSegue(withIdentifier: "goToSenador", sender: self)
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 285
+    }
+    
+   
 }
 
 
