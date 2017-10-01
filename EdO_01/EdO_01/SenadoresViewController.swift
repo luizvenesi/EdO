@@ -26,6 +26,10 @@ class SenadoresViewController: UIViewController, UITableViewDelegate, UITableVie
     
     let senadorEstado = ["RO", "SP", "PR", "RS", "RR", "MG", "SE", "PE", "TO", "AL", "PB", "MT", "PI", "DF", "SC", "SC", "AP", "MA", "SE", "AM", "RJ", "PI", "CE", "RN", "PE", "AL", "PA", "RN", "AC", "PR", "DF", "PE", "RO", "PA", "MA", "AP", "AC", "RN", "RN", "PB", "MT", "CE", "SP", "TO", "RS", "BA", "RJ", "GO", "ES", "SE", "SP", "AM", "BA", "SC", "RS", "PA", "MS", "PB", "AP", "PI", "DF", "AL", "ES", "BA", "PR", "MA", "RJ", "RR", "GO", "ES", "AC", "MS", "CE", "RR", "RO", "AM", "TO", "MS", "MT", "GO", "MG"]
     
+    let senadorInicioMandato = ["2015","2011", "2015", "2011", "2011", "2015", "2011", "2011", "2011", "2011", "2011", "2011", "2011", "2011", "2011", "2015", "2015", "2011", "2011", "2011", "2011", "2015", "2011", "2015", "2015", "2015", "2011", "2011", "2015", "2011", "2011", "2011", "2011", "2011", "2011", "2011", "2011", "2011", "2015", "2011", "2011", "2015", "2015", "2015", "2011", "2011", "2011", "2011", "2015", "2011", "2015", "2015", "2011", "2011", "2015", "2011", "2011", "2011", "2011", "2015", "2011", "2011", "2011", "2011", "2015", "2015", "2011", "2015", "2015", "2011", "2015", "2015", "2015", "2011", "2011", "2011", "2011", "2023", "2011", "2011"]
+    
+    let senadorFimMandato = ["2023","2019", "2023", "2019", "2019", "2023", "2019", "2019", "2019", "2019", "2019", "2019", "2019", "2019", "2019", "2023", "2023", "2019", "2019", "2019", "2019", "2023", "2019", "2023", "2023", "2023", "2019", "2019", "2023", "2019", "2019", "2019", "2019", "2019", "2019", "2019", "2019", "2019", "2023", "2019", "2019", "2023", "2023", "2023", "2019", "2019", "2019", "2019", "2023", "2019", "2023", "2023",  "2019", "2019", "2023","2019", "2019", "2019", "2019", "2023", "2019", "2019", "2019", "2019", "2023", "2023", "2019", "2023", "2023", "2019", "2023", "2023", "2023", "2019", "2019", "2019", "2019", "2023", "2019", "2019"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
        
@@ -55,6 +59,8 @@ class SenadoresViewController: UIViewController, UITableViewDelegate, UITableVie
         
         let cell = Bundle.main.loadNibNamed("TableViewCell", owner: self, options: nil)?.first as! TableViewCell
         cell.imageCellText.text = senadorImage[indexPath.row]
+        cell.senadorInicioMandato.text = senadorInicioMandato[indexPath.row]
+        cell.senadorFimMandato.text = senadorFimMandato[indexPath.row]
         cell.senadorEstado.text = senadorEstado[indexPath.row]
         cell.senadorPartido.text = senadorPartido[indexPath.row]
         cell.labelCustom.text = senadorName[indexPath.row]
