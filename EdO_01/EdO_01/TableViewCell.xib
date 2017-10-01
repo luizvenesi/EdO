@@ -36,7 +36,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uXF-ph-eqb">
-                        <rect key="frame" x="195" y="236" width="42" height="21"/>
+                        <rect key="frame" x="0.0" y="236" width="42" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
@@ -65,7 +65,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hDB-aM-JBY">
-                        <rect key="frame" x="290" y="236" width="42" height="21"/>
+                        <rect key="frame" x="58" y="236" width="42" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
@@ -78,6 +78,13 @@
                         <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lMd-aU-o4s">
+                        <rect key="frame" x="221" y="221" width="120" height="34"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                        <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
@@ -85,6 +92,7 @@
                 <outlet property="imageCellText" destination="uXF-ph-eqb" id="ldb-EU-tJe"/>
                 <outlet property="imageCustom" destination="y1S-8d-mO9" id="a9L-F4-UUx"/>
                 <outlet property="labelCustom" destination="nf8-mD-hFo" id="9Zf-GQ-1Ed"/>
+                <outlet property="senadorEstado" destination="lMd-aU-o4s" id="zEt-BX-EIO"/>
                 <outlet property="senadorID" destination="hDB-aM-JBY" id="wN0-Ta-xnH"/>
                 <outlet property="senadorPartido" destination="Jxi-dd-ss2" id="2dT-tB-5Ps"/>
                 <outlet property="total2017" destination="yyB-Sd-Lwz" id="hvJ-1P-WGg"/>

@@ -16,6 +16,7 @@ class TableViewCell: UITableViewCell {
     @IBOutlet weak var total2017: UILabel!
     @IBOutlet weak var senadorID: UILabel!
     @IBOutlet weak var senadorPartido: UILabel!
+    @IBOutlet weak var senadorEstado: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
