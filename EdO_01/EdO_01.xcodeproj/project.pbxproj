@@ -20,7 +20,6 @@
 		0CA1F93B1F7DE28E0057242D /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CA1F93A1F7DE28E0057242D /* libxml2.tbd */; };
 		0CFAA1A21F7FD413007AD705 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFAA1A01F7FD413007AD705 /* TableViewCell.swift */; };
 		0CFAA1A31F7FD413007AD705 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CFAA1A11F7FD413007AD705 /* TableViewCell.xib */; };
-		0CFC00A81F81790300E9CE31 /* SenadorGastosMesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFC00A71F81790300E9CE31 /* SenadorGastosMesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,7 +42,6 @@
 		0CA1F93A1F7DE28E0057242D /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		0CFAA1A01F7FD413007AD705 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		0CFAA1A11F7FD413007AD705 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
-		0CFC00A71F81790300E9CE31 /* SenadorGastosMesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenadorGastosMesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,18 +77,17 @@
 		0CA1F9131F7DD6230057242D /* EdO_01 */ = {
 			isa = PBXGroup;
 			children = (
-				0CFC00A71F81790300E9CE31 /* SenadorGastosMesViewController.swift */,
 				0CA1F9141F7DD6230057242D /* AppDelegate.swift */,
 				0CA1F9281F7DDCFF0057242D /* SenadorViewController.swift */,
 				0CA1F9261F7DDB700057242D /* SenadoresViewController.swift */,
 				0CA1F9181F7DD6230057242D /* Main.storyboard */,
-				0CFAA1A01F7FD413007AD705 /* TableViewCell.swift */,
-				0CFAA1A11F7FD413007AD705 /* TableViewCell.xib */,
 				0CA1F91B1F7DD6230057242D /* Assets.xcassets */,
 				0CA1F91D1F7DD6230057242D /* LaunchScreen.storyboard */,
 				0CA1F9201F7DD6230057242D /* Info.plist */,
 				0CA1F9361F7DE10F0057242D /* TFHpple */,
 				0CA1F92B1F7DE0B40057242D /* EdO_01-Bridging-Header.h */,
+				0CFAA1A01F7FD413007AD705 /* TableViewCell.swift */,
+				0CFAA1A11F7FD413007AD705 /* TableViewCell.xib */,
 			);
 			path = EdO_01;
 			sourceTree = "<group>";
@@ -124,12 +121,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0CA1F9231F7DD6230057242D /* Build configuration list for PBXNativeTarget "EdO_01" */;
 			buildPhases = (
-				75763BD7770C0C4372743B84 /* [CP] Check Pods Manifest.lock */,
 				0CA1F90D1F7DD6230057242D /* Sources */,
 				0CA1F90E1F7DD6230057242D /* Frameworks */,
 				0CA1F90F1F7DD6230057242D /* Resources */,
-				3240F6AF4503EEF8DAAE1812 /* [CP] Embed Pods Frameworks */,
-				5640B1D4533E4BA1D7B706AE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -189,68 +183,11 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		3240F6AF4503EEF8DAAE1812 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-EdO_01/Pods-EdO_01-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EdO_01/Pods-EdO_01-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5640B1D4533E4BA1D7B706AE /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EdO_01/Pods-EdO_01-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		75763BD7770C0C4372743B84 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-EdO_01-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		0CA1F90D1F7DD6230057242D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CFC00A81F81790300E9CE31 /* SenadorGastosMesViewController.swift in Sources */,
 				0CA1F9331F7DE0B60057242D /* TFHppleElement.m in Sources */,
 				0CA1F9271F7DDB700057242D /* SenadoresViewController.swift in Sources */,
 				0CA1F9291F7DDCFF0057242D /* SenadorViewController.swift in Sources */,

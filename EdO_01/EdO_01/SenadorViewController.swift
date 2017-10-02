@@ -23,7 +23,7 @@ class SenadorViewController: UIViewController {
     @IBOutlet weak var dValue6: UILabel!
     @IBOutlet weak var dValue7: UILabel!
     
-    var myIndex = 0
+    
     var senadorNumber = ""
     var senadorImage = ""
     
@@ -34,15 +34,6 @@ class SenadorViewController: UIViewController {
         loadDataWebSite()
         senadorID.text = "ID do Senador \(senadorNumber)"
         senadorID.text = senadorNumber
-        
-        
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(userDidTapLabel(tapGestureRecognizer:)))
-        dValeu1.isUserInteractionEnabled = true
-        dValeu1.addGestureRecognizer(tapGesture)
-       
-       
-        
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -50,27 +41,6 @@ class SenadorViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
-        
-    
-        
-   
-   
-    @objc func userDidTapLabel(tapGestureRecognizer: UITapGestureRecognizer) {
-       
-        performSegue(withIdentifier: "next", sender: self)
-        
-        
-        
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "next" {
-            let secondVC = segue.destination as! SenadorGastosMesViewController
-            secondVC.senadorNumberGM = senadorNumber
-          
-        }
-    }
 
     //Function Load Image
     func get_image(_ url_str:String, _ imageView:UIImageView)
